@@ -1,12 +1,13 @@
 
-const imgSrc = (id)=>{
-                      var uUrl = '';
-                      var ID = `${id}`
+const imgSrc = (id1)=>{
+  
+    var uUrl = '';
+                      var ID = `${id1}`
                       axios.get("https://jsonplaceholder.typicode.com/photos?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09.asp").then(
                         (data)=>{
                           
                           console.log(data.data);
-                          var rand = Math.floor(Math.random() * 100)%40;
+                          var rand = Math.floor(Math.random() * 100)%1000;
                           
                           uUrl = `${data.data[rand].url}`;
 
