@@ -16,12 +16,64 @@ body{
   .txt{
     display: inline-block;
     width: 100%;
+    color: black;
   }
   .aboutImage{
     position: right;
-    width: 85%;
-    padding-top: 20px;
+    width: 95%;
+    padding-top: 10px;
     padding-left: 50px;
     height: auto;
+  }
+  .half-width {
+    width: 50%;
+    padding-left: 5%;
+    text-align: justify;
+  }
+  #top{
+    padding-top: 20px;
+    width: 100%;
+    color: antiquewhite;
+    font-size: 40px;
+  }
+  .orange-color {
+    color: orange;
+  }
+  .half-width {
+    width: 50%;
+    padding-left: 5%;
+    text-align: justify;
+  }
+  .head {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding-top: 40px;
+    /* width: auto; */
+  
+  }
+  .img2{
+    position: right;
+    width: 95%;
+    padding-top: 10px;
+    padding-left: 70px;
+    height:80%;
+  }
+  #para{
+    color: antiquewhite;
+    font-size: 15px;
+  }
+  #top1{
+   top: -2px;
+    width: 100%;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+  }
+  #grid{
+    display: flex;
+  }
+  #info{
+
+    padding-left: 15px;
   }
   
