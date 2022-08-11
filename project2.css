@@ -1,0 +1,27 @@
+body{
+  background-color:black !important;
+}
+.navbar-brand {
+    font-size: 20px;
+    font-style: italic;
+    font-style: bold;
+  }
+  #flex{
+    display: flex;
+  }
+  .im{
+    display: flex;
+    padding-top: 15px;
+  }
+  .txt{
+    display: inline-block;
+    width: 100%;
+  }
+  .aboutImage{
+    position: right;
+    width: 85%;
+    padding-top: 20px;
+    padding-left: 50px;
+    height: auto;
+  }
+  
