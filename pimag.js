@@ -1,9 +1,12 @@
 
-const imgSrc = (id1)=>{
-  
-    var uUrl = '';
-                      var ID = `${id1}`
-                      axios.get("https://jsonplaceholder.typicode.com/photos?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09.asp").then(
+const imgSrc =async (id1,id2,id3,id4,id5,id6)=>{
+  var arr = [id1,id2,id3,id4,id5,id6];
+  var i =0;
+    while(i < 6){
+      // console.log(i);
+                      var uUrl = '';
+                      var ID = `${arr[i]}`
+                      await axios.get("https://jsonplaceholder.typicode.com/photos?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09.asp").then(
                         (data)=>{
                           
                           console.log(data.data);
@@ -12,16 +15,18 @@ const imgSrc = (id1)=>{
                           uUrl = `${data.data[rand].url}`;
 
                           if(uUrl != ''){
-                            console.log(uUrl);
+                           console.log(uUrl);
                             console.log(ID)
                             $(`#${ID}`).attr('src',uUrl);
                           }
+                          i++;
                         }
                       ).catch(function (error) {
                         // handle error
                         console.log(error);
-                      })
-
+                      });
+                      
+}
 
 
 

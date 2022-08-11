@@ -251,6 +251,8 @@ body{
           font-size: 12px;
         }
         .thumbnail{
-          background-color: black;
+          background-color: black !important;
           overflow: hidden;
+          border:0px !important;
+
         }

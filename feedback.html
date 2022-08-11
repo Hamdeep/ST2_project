@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        
+
+    </div>
+    <div class="feedback-container">
+        <div class="content-container">
+            <div class="support-form"><label>
+                    <p class="label">Full Name *</p><input name="fullName" type="text" required="" value="">
+                </label><label>
+                    <p class="label">Email Address *</p><input name="email" type="email" required="" value="">
+                </label><label>
+                    <p class="label">Subject *</p><input name="subject" type="text" required="" value="">
+                </label><label>
+                    <p class="label">How can we help you? *</p><textarea name="description" type="text"
+                        required=""></textarea>
+                </label>
+                <br />
+                <button class="button-submit-primary" tabindex="0" type="button"><span class="MuiButton-label">
+                        <span>Submit Feedback</span>
+                    </span><span class="submit-button-span"></span></button>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="Contact-info" style="text-align: center;">
+            <div class="Contact-info-details" id="ft">
+                <h1>Photo Gallery</h1>
+            </div>
+            <div class="Contact-info-details">
+                <i class="fa fa-map-marker" id="icons" style="font-size: xxx-large;"></i>
+                <h4>Find Us</h4>
+                <p style="font-size: 10px;">21620 N 19th Ave,
+                    <br /> Phoenix, AZ
+                </p>
+            </div>
+            <div class="Contact-info-details"> <i class="fa fa-phone" id="icons"
+                    style="font-size: xxx-large;"></i>
+                <h4> Call Us</h4>
+                <p>+828-668-2992 </p>
+            </div>
+            <div class="Contact-info-details"> <i class="fa fa-envelope-o" id="icons"
+                    style="font-size: xxx-large;"></i>
+                <h4> Write us</h4>
+                <a id="ik" href="mailTo:contact@hamdeep.xyz">Click here!</a>
+            </div>
+
+            <!--- End of Gallery Grid --->
+
+        </div>
+        <!--- End of Container --->
+    </div>
+    <style>
+        body {
+            color: #fff;
+            width: 100%;
+            font-family: "Arial", Helvetica, sans-serif;
+            background-color: black;
+        }
+
+        .header {
+            width: 100%;
+            margin: 0%;
+            padding: 0px;
+            height: fit-content;
+            background-color: black;
+            text-align: center;
+
+        }
+
+        .content-container {
+            /* height: auto; */
+            display: inline;
+            color: #f8941c;
+            text-align: center;
+            font-style: "Arial", Helvetica, sans-serif;
+        }
+
+        .feedback-container h1 {
+
+            padding-top: 4rem;
+            letter-spacing: 1.4px;
+            display: flexbox;
+
+        }
+
+        .feedback-container table td {
+            width: 70%;
+
+            /* text-align: center; */
+        }
+
+        .feedback-container {
+            background-image: url('./bgimg.jpg');
+
+            text-align: center;
+            height: 50vw;
+
+        }
+
+        .support-form {
+            height: fit-content;
+            position: relative;
+            /* top: 10vw; */
+            margin-left: 15vw;
+
+            float: left;
+            /* justify-content: flex-start; */
+        }
+
+        input {
+            border-radius: 21px;
+            width: 31.7vw;
+            height: 4vw;
+            margin-top: 0.75vw;
+            font-size: 1.5vw;
+            font-family: "Poppins";
+            border: 1px solid #d8d0d0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            border: 1px solid #d8d0d0;
+            box-sizing: border-box;
+            border-radius: 21px;
+            width: 31.67vw;
+            height: 10.8vw;
+            margin-top: 0.75vw;
+            font-size: 1.25vw;
+            font-family: "Poppins";
+
+        }
+
+        .button-submit-primary {
+            padding: 6px 8px;
+            background: #f8941c !important;
+            border-radius: 29px !important;
+            height: 4.5vw !important;
+            width: 20vw !important;
+            margin-top: 2vw !important;
+            border-width: inherit
+        }
+
+        .button-submit-primary:hover {
+
+            background: black !important;
+            color: #f8941c;
+
+        }
+
+        .support-form p {
+
+            bottom: -1vw;
+            text-align: left;
+        }
+
+        .image-feedback h2 {
+            position: relative;
+            top: 13vw;
+            font-size: xx-large;
+
+        }
+
+
+        .image-feedback h3 {
+            position: relative;
+            font-size: xx-large;
+            top: 26vw;
+
+        }
+
+
+
+
+        .footer {
+            display: flexbox;
+            background-color: black;
+            z-index: 99999;
+            width: 100%;
+            border-top: 5px solid orange;
+        }
+
+        .Content-info {
+            display: inline-flexbox;
+        }
+
+        .Contact-info-details {
+
+            display: inline-block;
+            width: 15%;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding-top: 25px;
+        }
+
+        .Contact-info-details i {
+            float: left;
+        }
+
+        .Contact-info-details h4,
+        .Contact-info-details {
+            color: orange
+            ;
+            position: relative;
+            bottom: 1rem;
+            /* left: 0.8rem; */
+        }
+
+        .social-buttons {
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .line {
+            background-color: #f8941c;
+            height: 2px;
+            width: 80%;
+            margin-left: 10rem;
+        }
+
+        .Contact-info-details p {
+            color: #fff;
+            text-align: end;
+        }
+
+        .feedback-form {
+            color: black;
+            float: right;
+            font-size: xx-large;
+            padding-right: 10rem;
+            padding-top: 2vw;
+        }
+
+        .feedback-form a {
+            /* margin-top: 2rem; */
+            text-transform: none;
+            display: inherit;
+            padding: 0;
+        }
+
+        .footer img {
+            margin-left: 3rem;
+            padding-top: 2vw;
+
+        }
+
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.05%;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+            width: max-content;
+
+        }
+
+        a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #f8941c;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.05%;
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+            width: max-content;
+
+        }
+        .contactSection-section {
+          background-color: black;
+          color: orange;
+          padding-top: 10px;
+          padding-bottom: 30px;
+          text-align: center;
+        }
+        .contactSection-section1 {
+          background-color: black;
+          color: orange;
+          padding-top: 10px;
+          padding-bottom: 50px;
+          text-align: right;
+
+        }
+        .contactButton {
+          background-color: rgb(2, 2, 2) ;
+          color: rgb(255, 255, 255);
+          padding: 15px 20px;
+          display: inline-block;
+          margin-bottom: 20px;
+          margin-top:20px ;
+          border: 1px solid #fff;
+          border-radius: 2px;
+        }
+        .contactButton:hover {
+          background-color: rgb(2, 2, 2) ;
+          color: rgb(255, 255, 255);
+        }
+
+        a:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #f8941c;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+        #ft{
+          left: -80px;
+          width: 10%;
+          font-family: papyrus, Arial, Tahoma, Serif;
+        }
+        #ik{
+          color: aliceblue;
+          text-decoration: none;
+          font-size: 12px;
+        }
+    </style>
+</body>
+
+</html>
